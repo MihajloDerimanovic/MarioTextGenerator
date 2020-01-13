@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Super Mario Text Generator</title>
+  <meta name="viewport" content="initial-scale=1.0, width=device-width" key="viewport" />
+  <meta name="keywords" content="super,mario,bros,text,ipsum,generator,phases,sentences,paragraphs" />
+  <meta name="description" content="This is a Texto Generator with the Universe of Super Mario Bros words, also is a JavaScript plugin for generate texts, paragraphs and sentences.">
+  <link rel="apple-touch-icon" sizes="180x180" href="images/toad.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="images/toad.png" />
+  <link rel="icon" type="image/png" sizes="192x192" href="images/toad.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="images/toad.png" />
+  <link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />
+  <script src="https://cdn.jsdelivr.net/gh/kelvinbiffi/MarioTextGeneratorJSPlugin@master/dist/MarioIpsum.js"></script>
+  <script src="script/main.js"></script>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-134859412-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-134859412-1');
+  </script>
+
+</head>
+<body>
+  
+  <header>
+    <a href="https://github.com/MihajloDerimanovic/MarioTextGenerator" target="_blank" class="github">
+      <img src="http://kelvinbiffi.github.io/images/github.png" />
+    </a>
+     
+  </header>
+  
+  <main>
+    <div class="mario--background"></div>
+    
+    <div class="logo paralax">
+      <h1>
+        <img src="images/super_mario_world_logo.png" />
+        <span>Text Generator</span>
+      </h1>
+    </div>
+    
+    <section class="text-generator">
+        <div class="mario-text">
+            Your text will appear here...
+          </div>
+          <div class="settings">
+            <select id="type">
+                <option value="PARAGRAPH">PARAGRAPH</option>
+                <option value="SENTENCE">SENTENCE</option>
+            </select>
+            <select id="mode">
+                <option value="SHORT">SHORT</option>
+                <option value="MEDIUM" selected>MEDIUM</option>
+                <option value="LONG">LONG</option>
+            </select>
+            <input id="length" type="number" value="2" />
+            <button class="mario-btn">Generate Text</button>
+          </div>
+    </section>
+    
+    <section class="examples">
+      <h2>Examples</h2>
+      <div>
+        <span class="label--example">TEXTAREA<br><span>data-mario="PARAGRAPH|1|LONG"</span></span>
+        <textarea class="example-text" data-mario="PARAGRAPH|1|LONG"></textarea>
+        
+        <span class="label--example">INPUT<br><span>data-mario="SENTENCE|2"</span></span>
+        <input type="text" data-mario="SENTENCE|2" />
+      </div>
+      <!-- OR -->
+      <div>
+        
+        <span class="label--example">DIV<br><span>data-mario="PARAGRAPH|3|SHORT"</span></span>
+        <div class="example-text" data-mario="PARAGRAPH|3|SHORT"></div>
+      </div>
+    </section>
+    
+  </main>
+  
+  <footer>
+    <p>
+      Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
+    </p>
+    <p>
+      <a class="issue" href="https://github.com/kelvinbiffi/MarioTextGeneratorJSPlugin/issues/new" target="_blank">
+        NEW ISSUE
+      </a>
+    </p>
+    <p>
+      <a href="https://github.com/kelvinbiffi/MarioTextGeneratorJSPlugin" target="_blank" class="github">
+        <img src="http://kelvinbiffi.github.io/images/github.png" />
+      </a>
+       
+    </p>
+  </footer>
+</body>
+</html>
